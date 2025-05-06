@@ -9,17 +9,12 @@ A pod in kubernets is a small container for running parts of an application
 
 * Inspect a pod :
       
-      kubectl describe pod <pod-name>
+      kubectl describe pod <storageiprovisioner> -n <kube-system>
 
-
+![1](./img/1b.png)
 * Delete a pod :
      
-      kubectl delete pod <pod-name>
+      kubectl delete pod <storageiprovisioner> -n <kube-system>
+![1](./img/1c.png)
 
-in summary the following were looked into in the project:
-
-* Defining and managing Pods: Each Pod can contain multiple containers that share networking and storage.
-
-* Using kubectl commands: You'll interact with the Minikube cluster to list, inspect, and delete Pods.
-
-This project helps reinforce containerization concepts and Kubernetes cluster management.
+In summary the project involved Using kubectl commands to interact with the Minikube cluster to list, inspect, and delete Pods. Which helps to reinforce containerization concepts and Kubernetes cluster management.
